@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/Circle-icons-calculator.svg.png">
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>Kalkulator</title>
+
+</header>
+
+<body>
+    <!-- Bagian  -->
+    <div class="container" name="container">
+        
+        <!-- tulisan di sebelah kiri -->
+        <div class="tulisan">
+            <div class="h1">
+                <h1>KALKULATOR</h1>
+            </div>
+
+            <div class="kecilan">
+                Kalkulator merupakan alat bantu hitung elektronik yang masih sederhana dibandingkan dengan 
+                komputer. Kalkulator dapat membantu seseorang untuk yang mengalami kesulitan dalam 
+                menghitung. Salah satu kalkulator yang sering digunakan adalah kalkulator saintifik.
+            </div>
+        </div>
+
+        <!-- Kalkulator -->
+        <div class="kalku">
+            <!-- Layar Kalkulator -->
+            <input class="screen" name="screen" type="text" placeholder="0" readonly="" >
+            
+            <!-- tombol" kalkulator -->
+            <button style="background-color: rgb(208, 73, 73); color: white;" onclick="clr()" class="button">CE</button>
+            <button style="background-color: rgb(208, 73, 73); color: white;" onclick="bckspc()" class="button"><</button>
+            <button onclick="opermasuk('%')" class="button">%</button>
+            <button onclick="opermasuk('/')" class="button">/</button>
+            <button onclick="angkamasuk(7)" class="button">7</button>
+            <button onclick="angkamasuk(8)" class="button">8</button>
+            <button onclick="angkamasuk(9)" class="button">9</button>
+            <button onclick="opermasuk('*')" class="button">x</button>
+            <button onclick="angkamasuk(4)" class="button">4</button>
+            <button onclick="angkamasuk(5)" class="button">5</button>
+            <button onclick="angkamasuk(6)" class="button">6</button>
+            <button onclick="opermasuk('+')" class="button">+</button>
+            <button onclick="angkamasuk(1)" class="button">1</button>
+            <button onclick="angkamasuk(2)" class="button">2</button>
+            <button onclick="angkamasuk(3)" class="button">3</button>
+            <button onclick="opermasuk('-')"class="button">-</button>
+            <button onclick="angkamasuk(0)"class="button">0</button>
+            <button onclick="angkamasuk('.')"class="button">.</button>
+            <button onclick="equal()" class="samdeg">=</button>   
+        </div>
+    </div>
+
+    <!-- Menghubungkan javascript -->
+    <script src="mesin.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* setting background */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #505bf7ff;
+    background-image: url(img/_28_discord-background-wallpaper_2444631002.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    outline: none;
+    display: flex;
+}
+
+/* tempat kalkulator dan tulisan */
+.container{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 26%;
+    /* background-color: white; */
+}
+
+/* pada bagian tulisan */
+.tulisan{
+    display: flexbox;
+    text-align: end;
+    left: 40%;
+    margin-right: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* pada bagian judul tulisan */
+.h1{
+    font-size: 30px;
+    /* font-family: 'duar'; */
+}
+
+/* bagian kalkulator */
+.kalku{
+    box-shadow: inset 8px 8px 8px white,
+                6px 6px 6px rgba(9, 28, 28, .68),
+                inset -2px -2px 3px rgba(9, 28, 28, .34);
+    border-radius: 30px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 66px);
+    background-color: rgb(235, 235, 235);
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* layar pada kalkulator */
+.screen{
+    grid-column: span 4;
+    text-align: end;
+    box-shadow: inset -8px -8px 4px rgba(239, 238, 238, .54),
+                inset 6px 6px 4px rgba(9, 28, 28, .54);
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-size: 38px;
+    padding: 0 16px;
+}
+
+/* tombol pada kalkulator */
+button{
+    box-shadow: inset 4px 4px 4px rgba(249, 246, 246, .64),
+                inset -3px -3px 4px rgba(9, 28, 28, .54);
+    border: none;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    font-size: 18px;
+    margin: 0px 5px 10px 10px;
+    font-weight: bold;
+    
+}
+
+/* tombol sama dengan */
+.samdeg{
+    width: 120px;
+    border-radius: 42px;
+}
+
